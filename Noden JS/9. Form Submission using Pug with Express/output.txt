@@ -1,0 +1,12 @@
+the name of client is ahmed. The age of client is 20, the gender is male, lives in jhelum 
+
+the name of client is daniyal. The age of client is 16, the gender is male, lives in jhelum  
+
+the name of client is arshiam. The age of client is 16, the gender is male, lives in jhelum 
+
+the name of client is abdullah. The age of client is 14, the gender is male, lives in jhelum 
+ 
+the name of client is safi. The age of client is 10, the gender is male, lives in jhelum 
+ 
+the name of client is harry. The age of client is 30, the gender is male, lives in india 
+ 

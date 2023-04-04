@@ -1,0 +1,21 @@
+{
+  "name": "nodemon",
+  "version": "1.0.0",
+  "description": "this is nodemon installation and setup",
+  "main": "javascript.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node app.js",
+      "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedrohailawan/nodemon-installtion-to-restart-server-automatically.git"
+  },
+  "author": "ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmedrohailawan/nodemon-installtion-to-restart-server-automatically/issues"
+  },
+  "homepage": "https://github.com/ahmedrohailawan/nodemon-installtion-to-restart-server-automatically#readme"
+}
