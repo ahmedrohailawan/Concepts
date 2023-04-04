@@ -1,0 +1,3 @@
+# Sequence Prediction using keras
+
+This code defines, compiles, trains, and predicts with a simple neural network using TensorFlow, an open-source machine learning framework. The neural network has a single neuron and input shape of one, and it is trained to fit a linear relationship between input xs and output ys using stochastic gradient descent optimizer and mean squared error loss function. After training the model for 500 epochs on the given training data, it predicts the output for a new input value of 10.0 and prints it, which is approximately 19.0, according to the linear relationship learned during training.
