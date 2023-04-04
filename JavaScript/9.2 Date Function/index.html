@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Dates</title>
+    <style>
+        .container{
+            font-size: 23px;
+            background-color: blanchedalmond;
+            border: 2px solid gray ;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Time Now is =  <span id="time"></span>
+    </div>
+    <script>
+        // console.log("this is a time and javascript tutorial");
+        // let now = new Date();
+        // console.log(now);
+
+        // let dt = new Date(10);
+        // console.log(dt);
+
+        // let newdate = new Date("2021-9-1");
+        // console.log(newdate);
+
+        // let newdate = new Date(year, month, date, hours, minutes, seconds, miliseconds);
+        // let newdate = new Date(2021,10,12,7,12,34);
+        // console.log(newdate);
+
+        // let year = newdate.getFullYear();
+        // console.log("the year is ", year);
+
+        // let month = newdate.getMonth();
+        // console.log("the month is ", month);
+
+        // let date = newdate.getDate();
+        // console.log("the date is ", date);
+
+        // let hours = newdate.getHours();
+        // console.log("the hours is ", hours);
+
+        // let minutes = newdate.getMinutes();
+        // console.log("the minute  is ", minutes);
+
+        // let seconds = newdate.getSeconds();
+        // console.log("the second is ", seconds);
+
+        // newdate.setDate(40);
+        // console.log(newdate);
+        setInterval(updatetime, 1000);
+        function updatetime(){
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+</html>

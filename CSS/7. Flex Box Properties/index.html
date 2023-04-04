@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        height: 544px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        /* flex container properties */
+        
+        /* flex-direction: row;
+         flex-direction: column;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse; */
+
+        /* flex-wrap: wrap;
+        flex-wrap: wrap-reverse; */
+        flex-flow: row wrap;
+
+        /* justify-content: center; */
+        /* justify-content: space-between;
+        justify-content: space-evenly;
+        justify-content: space-around; */
+
+        align-items: center;
+        /* align-items: flex-end;
+        align-items: flex-start;
+        align-items: stretch; */
+      }
+      .item {
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+        border: 2px solid rgb(65, 214, 28);
+        margin: 10px;
+        padding: 3px;
+      }
+      #item1{
+        order: 1;
+      }
+      #item2{
+        order: 2;
+      }
+      #item3{
+        order: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>this is flexbox</h1>
+    <div class="container">
+      <div class="item" id="item1">Flex box 1</div>
+      <div class="item" id="item2">Flex box 2</div>
+      <div class="item" id="item3">Flex box 3</div>
+      <div class="item" id="item4">Flex box 4</div>
+      <div class="item" id="item5">Flex box 5</div>
+      <div class="item" id="item6">Flex box 6</div>
+    </div>
+  </body>
+</html>

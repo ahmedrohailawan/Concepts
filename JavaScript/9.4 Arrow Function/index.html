@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow function</title>
+</head>
+<body>
+    <div class="container">
+        this is arrow function tut
+    </div>
+
+</body>
+<script>
+    function greet(){
+        console.log('good morning');
+    }
+    greet();
+
+    // let greet1 = ()=> {
+    //     console.log('good morning');
+    // }
+    // greet1();
+    
+    // let greet2 = () => console.log('good morning');
+
+    
+    let obj1={
+        greeting : 'good morning',
+        names: ['Ahmed','Daniyal','skillf','waheed'],
+        speak(){
+            this.names.forEach(student => {
+                console.log("hello " + this.greeting +" " +  student);
+            });
+        }       
+    }
+    obj1.speak();
+    
+    let sum1 = (a,b)=>{
+            return a+b;
+        };
+        let sum = (a,b)=> a+b;
+        let half = (a)=>a/2;
+        console.log(sum(10,20))
+        console.log(half(10))
+        
+        setTimeout(() => {
+            console.log('we are inside settimeout');        
+        }, 3000);
+</script>
+</html>

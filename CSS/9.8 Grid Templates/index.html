@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spaning in css grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside';
+        }
+        .box{
+            padding: 40px;
+            border: 2px solid black;
+            background-color: rgb(159, 241, 92);
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            home about us contact us services
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eos assumenda adipisci corrupti ut alias pariatur, laboriosam molestias sunt consequatur temporibus accusantium modi itaque non natus facere voluptatem repellat aliquam iure ab nostrum aperiam, impedit, magni tenetur. Exercitationem repellendus officiis dolor sint. Quidem ipsum expedita necessitatibus labore voluptates repellendus quam molestiae id sapiente? Deleniti magnam eum mollitia nobis? Accusantium repellendus fuga facere minus sapiente ullam incidunt similique fugiat autem quam ratione eum dolorum praesentium doloremque, quae maiores ut, iste cumque harum excepturi aliquid ducimus consectetur? Quia molestiae nulla officia doloremque? Voluptate dolor nostrum tempore veniam facere itaque laborum, unde laboriosam ab voluptatibus vitae dolorum odit amet accusamus quis ex commodi atque assumenda et repellendus officiis. Animi provident atque ad ducimus quia dolore ipsam! Beatae accusantium dolorum exercitationem veniam totam? Totam asperiores sed quisquam nulla deserunt aut iure ratione dolores, quidem, ab placeat assumenda repellat veniam at numquam ducimus. Rem magnam nulla ducimus repudiandae similique corrupti tenetur vero, praesentium minima numquam voluptatibus, commodi sed dicta nostrum id, voluptas accusamus recusandae incidunt iusto porro. Mollitia, nam illum cumque inventore aut dignissimos corporis at assumenda tempore obcaecati facilis laudantium deserunt rerum pariatur quaerat animi porro distinctio. Debitis, iste quibusdam nisi optio sequi odio, temporibus nemo quis quisquam sit quod veniam repellat enim laudantium inventore eius laboriosam, minus qui! Dicta quasi sapiente dolore explicabo quas laudantium mollitia quos reprehenderit earum consectetur ducimus veritatis, porro error doloribus repellendus illum unde placeat debitis hic, iusto sequi nam voluptatibus molestiae eius? Quia rerum aspernatur illo quas quis quisquam ab fuga placeat ipsa temporibus, ratione, cupiditate culpa autem veniam molestiae consequatur omnis officiis consectetur inventore debitis error eos, nulla est mollitia. Et totam mollitia eos, voluptatem accusantium ea magnam quae delectus consequuntur quidem explicabo recusandae, neque nostrum? Voluptatum necessitatibus maiores blanditiis error totam odio doloribus eius nemo provident, nulla ad dolorum fuga illum, quisquam reprehenderit, aperiam facilis perferendis repellendus aliquam atque facere. Commodi, sequi ex. Maiores molestiae a, repudiandae hic voluptatem commodi saepe voluptates dolores ipsa volLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem delectus illum, dolores quisquam suscipit nihil error omnis excepturi sint.</div>
+
+        <div id="aside" class="item">uptatum tempora est libero, earum sunt distinctio, corporis debitis ut. Quia culpa aperiam nulla in exercitationem assumenda est quidem omnis, minus quasi voluptatibus nobis sint similique aliquam cum temporibus voluptatem soluta et voluptatum iure mollitia officiis dicta rem. Animi laboriosam dignissimos enim quo fugiat amet, id veniam, officia architecto nihil beatae minima quaerat, error atque? Incidunt vero ullam dicta distinctio fugit. Omnis ea soluta officiis at facere voluptates? Iste magnam dicta repudiandae.</div> 
+</body>
+</html>

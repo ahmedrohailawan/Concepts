@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays and objects in javascript</title>
+</head>
+<body>
+    <div class="container">simple html</div>
+    <script>
+        let var1 = 34;
+        let var2 = "string";
+        let var3 = true;
+        let var4 = null;
+        let var5 = undefined;
+        
+        let employee = {
+            name : "ahmed",
+            salary : 10,
+            channel1 : "mrrohailawan",
+            "channel 2" : "random studio",
+        }
+        console.log(employee);
+        console.log(employee.name);
+        console.log(employee["channel 2"])
+
+        let names= [1,2,4,"ahmed",undefined];
+        console.log(names);
+        
+        let name = new Array(11,24,4,"ahmed",undefined);
+        name.push("pushed will apply on the last");
+        console.log(name.length);
+        console.log(name[3])
+        name = name.sort();
+        console.log(name);
+        let name4 = new Array(25);
+        name4.push(22)
+        console.log(name4);
+        
+
+    </script>
+</body>
+</html>

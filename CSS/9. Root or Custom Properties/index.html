@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vaiables</title>
+    <style>
+        :root{
+            --box-color:violet;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            /* --box-color:violet; */
+            /* this is how variables are created */
+            background-color: var(--box-color);
+
+        }
+        .container{
+            display: flex;
+            background-color: var(--box-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="bix1">box 1</div>
+        <div class="box" id="bix2">box 2</div>
+        <div class="box" id="bix3">box 3</div>
+        <div class="box" id="bix4">box 4</div>
+    </div>
+</body>
+</html>

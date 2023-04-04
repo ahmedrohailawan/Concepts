@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition in css</title>
+    <style>
+        #box{
+            display: flex;
+            height: 200px;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid red;
+            transition-property: background-color;
+            /* transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+            /* transition: background-color 1s ease-in-out 1s; */
+            transition: all 1s ease-in-out 1s;
+
+        }
+        #box:hover{
+            background-color: green;
+            height: 500px;
+            width: 500px;
+            font-size: 100px;
+            border-radius: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>this is heading</h1>
+    <dib id="box">
+        this is a box
+    </dib>
+</body>
+</html>

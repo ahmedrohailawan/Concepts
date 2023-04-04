@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulating dom</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>about</li>
+            <li>Services</li>
+            <li>About us</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+    <div class="container">
+        another container
+    </div>
+</body>
+<script>
+    let main = document.getElementById(`main`);
+    console.log(main);
+
+    let nav =  document.getElementById(`nav`);
+    console.log(nav);
+    
+    nav.innerHTML = `<li>Dynamic elemnt</li>`;
+
+    let container = document.getElementsByClassName(`container`);
+    console.log(container);
+
+    let sel = document.querySelector(`.container`);
+    console.log(sel);
+    let all = document.querySelectorAll(`.container`);
+    console.log(all);
+</script>
+</html>

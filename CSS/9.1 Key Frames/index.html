@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key frames and animation</title>
+    <style>
+        .container{
+            background-color: cyan;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border: 2px solid black;
+            text-align: center;
+            position: relative;
+            /* animation: ahmed;
+            animation: ahmed2;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 3;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+            animation-direction: reverse; */
+            animation: ahmed2 4s ease-in-out 1 2s backwards ;
+        }
+        @keyframes ahmed2{
+            0%{
+                top:0px ;
+                left:0px ;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                top: 250px;
+                left:250px ;
+            }
+            75%{
+                top: 0px;
+                left:250px ;
+            }
+            100%{
+                top:0px ;
+                left:0px ;
+            }
+        }
+      @keyframes ahmed{
+          from{
+            width: 200px;
+          }
+          to{
+            width: 400px;
+          }
+      }  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eveniet modi vero tempora. Minus minima autem officiis totam obcaecati consequatur earum nobis distinctio, eius eligendi corrupti rerum voluptatibus itaque! Quibusdam.</div>
+    </div>
+</body>
+</html>

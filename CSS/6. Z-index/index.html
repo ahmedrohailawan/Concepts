@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: blue;
+            position: relative;
+            top: 66px;
+            z-index: 12;
+            /* higher will have domination over lower z index having psoition will be realtive sticky etc*/
+        }
+        #box2{
+            /* visibility: hidden; will hide the element */
+            /* display: none;  wil remove the content */
+            background-color: rgb(0, 255, 255);
+            position: relative;
+            top: 34px;
+            z-index: -1;
+        }
+        #box3{
+            background-color: rgb(0, 255, 21);
+        }
+        #box4{
+            background-color: rgb(255, 0, 221);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

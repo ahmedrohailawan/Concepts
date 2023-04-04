@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set timeout and clear timeout or setinterval</title>
+</head>
+<body>
+    <div class="container">
+       Time now is <span id="time"></span>
+    </div>
+</body>
+<script>
+    // console.log("this is a tut");
+    // settimeout (allow us to run function onece)
+    // clear timeout (allow us to run function repeatedly)
+    function greet(name){
+        console.log("good morning " + name);
+    }
+    timeout = setTimeout(greet,1000,"ahmed");
+    console.log(timeout);
+// clearTimeout(1);
+   
+//    setInterval(greet,1000,"ahmed");
+//    intervalid = setInterval(greet,1000,"ahmed");
+//    console.log(intervalid);
+    function displaytime(){
+        time =  new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displaytime,  1000);
+</script>
+</html>

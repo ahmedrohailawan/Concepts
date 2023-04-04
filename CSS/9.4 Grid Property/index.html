@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* for ratio */
+            grid-template-columns: 1fr 1fr 1fr; 
+            /* specially for mainting items */
+            grid-template-columns: repeat(3,auto);
+        }
+        .item{
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            margin: 3px;
+        }
+        @media screen and (max-width:700px) {
+            
+            .container{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+        }
+        .item{
+            height: 80px;
+            width: 80px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item">this is the item-1</div>
+    <div class="item">this is the item-2</div>
+    <div class="item">this is the item-3</div>
+    <div class="item">this is the item-4</div>
+    <div class="item">this is the item-5</div>
+    <div class="item">this is the item-6</div>
+    <div class="item">this is the item-7</div>
+    <div class="item">this is the item-8</div>
+    <div class="item">this is the item-9</div>
+    <div class="item">this is the item-1</div>
+    <div class="item">this is the item-2</div>
+    <div class="item">this is the item-3</div>
+    <div class="item">this is the item-4</div>
+    <div class="item">this is the item-5</div>
+    <div class="item">this is the item-6</div>
+    <div class="item">this is the item-7</div>
+    <div class="item">this is the item-8</div>
+    <div class="item">this is the item-9</div>
+</div>
+</body>
+</html>

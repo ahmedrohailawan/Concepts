@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings and strings method</title>
+</head>
+<body>
+    <div class="container">
+        <h1>this is a paragraph</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatum voluptatibus obcaecati at rem sed debitis, libero ad hic! Harum tempora quisquam necessitatibus sint cumque amet, animi, maxime aliquam quos soluta odio assumenda consectetur quis optio corporis excepturi quasi sapiente!</p>
+    </div>
+    <script>
+        var string = "welcome \n";
+        var name = "ahmed";
+        var channel =" mrrohailawan ";
+        var message = " is its channel;";
+        console.log(string + name + channel + message)
+
+        var temp = `${name} is a nice person and he has a cahnnel called ${channel} `;
+        console.log(temp)
+        var length = name.length;
+        console.log(`length of name is ${length}`)
+
+        document.getElementById('content').innerHTML = '<h3>this is an h3 heading </h3>'
+
+    </script>
+</body>
+</html>

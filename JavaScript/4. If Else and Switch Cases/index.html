@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scope , if else and switch cases in java script</title>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+      </ul>
+    </div>
+
+    <script>
+      var string1 = "this is a string";
+      console.log(string1);
+
+      let b = "u";
+      console.log(b);
+
+      {
+        let b = "t";
+        console.log(b);
+      }
+
+      console.log(b);
+
+        const a = 'this is constant and cannot change';
+        console.log(a);
+
+        let age = 2;
+        if(age>18){
+            console.log('you can drink water');
+        }
+        else if(age==2){
+            console.log('age is 2 ');
+        }
+        else if(age==5){
+            console.log('age is 5');
+        }
+        else if(age>8){
+            console.log('age is 8');
+        }
+        else{
+            console.log('you can drink cold drink');
+        }
+
+        const cups=6;
+        switch (cups){
+            case 7:
+                console.log('the value of cup is 7')
+                break;
+            case 35:
+                console.log('the value of cup is 35')
+                break;
+            case 26:
+                console.log('the value of cup is 26')
+                break;
+            case 6:
+                console.log('the value of cup is 6')
+                break;
+
+            default:
+                console.log('the value of cup is not in the list')
+                break;
+        }
+    </script>
+  </body>
+</html>

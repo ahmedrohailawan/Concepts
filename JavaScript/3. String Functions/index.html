@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>string functions</title>
+  </head>
+  <body>
+    <script>
+      var str = `" this is a string "`;
+      console.log(str);
+      var position = str.indexOf("is");
+      console.log(position);
+
+      position = str.lastIndexOf("is");
+      console.log(position);
+
+      var substr = str.slice(0, 9);
+      console.log(substr);
+
+      var substr1 = str.substring(0, 9);
+      console.log(substr1);
+
+      var substr2 = str.substr(0, 9);
+      console.log(substr2);
+
+      var replace = str.replace("string", "ahmed");
+      console.log(str);
+      console.log(replace);
+
+      console.log(str.toUpperCase());
+      console.log(str.toLowerCase());
+
+      var addstring = str.concat(" and this a new string added using concat");
+      console.log(addstring);
+
+      var whitespaces = "   whte      space ";
+      console.log(whitespaces.trim());
+      console.log(whitespaces);
+      
+      var character = str.charAt(2);
+      console.log(character);
+
+      var character = str.charCodeAt(2);
+      console.log(character);
+
+      console.log(str[4]);
+
+    </script>
+  </body>
+</html>
